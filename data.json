@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "fields": {
+            "company": "Apple",
+            "colors": ["red","black"],
+            "featured": true,
+            "price": 999,
+            "name": "iPhone XR",
+            "image": [{
+                
+                "id": "attcvDDMikF6G2iNi",
+                "url": "https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg",
+                "type": "image/jpeg",
+                "size": 62864,
+                "filename": "product-1.jpeg"
+            }]
+        }
+    }
+
+]
