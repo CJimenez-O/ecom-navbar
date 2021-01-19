@@ -30,6 +30,7 @@ const getStorageItem = (item) => {
 const setStorageItem = (name, item) => {
   localStorage.setItem(name, JSON.stringify(item));
 };
+
 export {
   allProductsUrl,
   singleProductUrl,

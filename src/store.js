@@ -1,23 +1,22 @@
 import { getStorageItem, setStorageItem } from './utils.js';
-let store = [];
+let store = getStorageItem('store');
 
-// destructuring products from json
+// grabs elements from database
 const setupStore = (products) => {
-    console.log(products)
-    store = products.map( (product)=> {
-        
-        const {id, fields:{featured,name,price,company,colors,image:img}} = product
-        // to get info from data.json
-        // const image = img[0].thumbnails;
-        const image = img[0].thumbnails.large.url;
-        return {id, featured,name,price,company,colors,image};
-    })
+  store = products.map((product) => {
+    const {
+      id,
+      fields: { featured, name, price, company, colors, image: img },
+    } = product;
+    const image = img[0].thumbnails.large.url;
+    return { id, featured, name, price, company, colors, image };
+  });
+  setStorageItem('store', store);
 };
 
-// console.log(store)
 const findProduct = (id) => {
-    let product = store.find((product) => product.id === id);
-    return product;
-  };
+  let product = store.find((product) => product.id === id);
+  return product;
+};
 
 export { store, setupStore, findProduct };

@@ -1,13 +1,11 @@
 import { allProductsUrl } from './utils.js';
 
-
-// grabs json from api
 const fetchProducts = async () => {
-    const responce =await fetch(allProductsUrl).catch(err => console.log(err))
-    if(responce){
-        return responce.json();
-    }
-    return responce;
+  const response = await fetch(allProductsUrl).catch((err) => console.log(err));
+  if (response) {
+    return response.json();
+  }
+  return response;
 };
 
 export default fetchProducts;

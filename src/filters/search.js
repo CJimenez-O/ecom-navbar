@@ -1,6 +1,5 @@
 import { getElement } from '../utils.js';
 import display from '../displayProducts.js';
-
 const setupSearch = (store) => {
   const form = getElement('.input-form');
   const nameInput = getElement('.search-input');
@@ -15,6 +14,8 @@ const setupSearch = (store) => {
         }
       });
       display(newStore, getElement('.products-container'));
+
+      // if search results are < 1 display error
       if (newStore.length < 1) {
         const products = getElement('.products-container');
         products.innerHTML = `<h3 class="filter-error">
