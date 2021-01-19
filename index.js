@@ -16,6 +16,8 @@ const init = async () => {
 
         // filtered data
         // console.log(store)
+        const featured = store.filter((product) => product.featured === true);
+         display(featured, getElement('.featured-center'));
     }
 };
 
