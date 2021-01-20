@@ -8,7 +8,7 @@ const setupStore = (products) => {
       id,
       fields: { featured, name, price, company, colors, image: img },
     } = product;
-    const image = img[0].thumbnails.large.url;
+    const image = img[0].url;
     return { id, featured, name, price, company, colors, image };
   });
   setStorageItem('store', store);

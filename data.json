@@ -5,12 +5,48 @@
             "company": "Apple",
             "colors": ["red","black"],
             "featured": true,
-            "price": 999,
+            "price": 39999,
             "name": "iPhone XR",
             "image": [{
                 
-                "id": "attcvDDMikF6G2iNi",
-                "url": "https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg",
+                "id": "iPhoneXR",
+                "url": "/images/iphone-xr-red-select-201809.png",
+                "type": "image/jpeg",
+                "size": 62864,
+                "filename": "product-1.jpeg"
+            }]
+        }
+    },
+    {
+        "id": 1,
+        "fields": {
+            "company": "Apple",
+            "colors": ["red","black"],
+            "featured": true,
+            "price": 39999,
+            "name": "iPhone XR",
+            "image": [{
+                
+                "id": "iPhoneXR",
+                "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-black-select-201809?wid=470&hei=556&fmt=png-alpha&.v=1551226038992",
+                "type": "image/jpeg",
+                "size": 62864,
+                "filename": "product-1.jpeg"
+            }]
+        }
+    },
+    {
+        "id": 1,
+        "fields": {
+            "company": "Apple",
+            "colors": ["red","black"],
+            "featured": true,
+            "price": 39999,
+            "name": "iPhone XR",
+            "image": [{
+                
+                "id": "iPhoneXR",
+                "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-xr-black-select-201809?wid=470&hei=556&fmt=png-alpha&.v=1551226038992",
                 "type": "image/jpeg",
                 "size": 62864,
                 "filename": "product-1.jpeg"

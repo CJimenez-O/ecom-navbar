@@ -1,4 +1,5 @@
-const allProductsUrl = 'https://course-api.com/javascript-store-products';
+// change these url destinations to grab different info
+const allProductsUrl = '/data.json';
 const singleProductUrl = 'https://course-api.com/javascript-store-single-product';
 
 const getElement = (selection) => {

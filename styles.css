@@ -130,8 +130,7 @@ p {
   font-family: 'Kaushan Script', cursive;
 }
 .section-center {
-  width: 90vw;
-  max-width: var(--max-width);
+  max-width: 80%;
   margin: 0 auto;
 }
 .section {
@@ -535,8 +534,17 @@ Title
 product
 ===============
 */
+
+.product{
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+
+}
+
 .product-img {
-  height: 15rem;
   object-fit: cover;
   border-radius: var(--radius);
 }
@@ -588,21 +596,20 @@ product
 }
 
 .featured-center {
-  margin: 3rem auto 2rem auto;
   display: grid;
-  gap: 1rem;
-  min-height: 6rem;
-  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 7rem 3rem;
 }
 .featured .btn {
   display: block;
   width: 11rem;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .featured-center {
-    display: grid;
+    display: block;
+    width:100%;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -611,9 +618,7 @@ product
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .product .img {
-    height: 13rem;
-  }
+  
 }
 /*
 =============== 
@@ -638,8 +643,12 @@ Products Page
   grid-gap: 1rem;
   margin: 4rem auto;
   max-width: var(--max-width);
-  min-height: calc(100vh - 20rem);
   position: relative;
+}
+.product {
+  margin: 0rem auto;
+  position: relative;
+  padding-bottom: 20px;
 }
 .filters-container {
   position: sticky;
@@ -695,7 +704,7 @@ Products Page
     gap: 1rem;
   }
   .products-container .product-img {
-    height: 10rem;
+    height: 27rem;
   }
   .products-container .product-name {
     font-size: 0.85rem;
